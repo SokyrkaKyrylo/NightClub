@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NightClubApi.Models;
 
 namespace NightClubApi.Controllers
@@ -13,7 +12,7 @@ namespace NightClubApi.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest("Check if you age more than 18 and less then 30");
+                return BadRequest();
             }
 
             return Ok("You have been registered successfully");
